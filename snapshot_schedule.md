@@ -1,4 +1,6 @@
 # Define backup policy
+- run snapshot at 4am daily with 7 days retention period
+
 ```
 resource "google_compute_resource_policy" "policy" {
   name = "daily-policy-4am"
