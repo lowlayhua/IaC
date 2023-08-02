@@ -43,3 +43,6 @@ network_interface {
 allow_stopping_for_update = true
 }
 ```
+
+# To view resource dependency graph of the resource created,
+- `terraform graph | dot -Tsvg`
