@@ -1,0 +1,8 @@
+# correct
+
+In which phase of the Terraform workflow do you write configuration files based on the scope defined by your organization?
+- Author
+
+# wrong
+In which phase of the Terraform workflow can you run pre-deployment checks against the policy library?
+- why plan wrong
