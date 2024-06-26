@@ -18,7 +18,7 @@ lifecycle {
 # GCE lifecycle
 ```
 lifecycle {
-    ignore_changes = [attached_disk, tags]
+    ignore_changes = [attached_disk, tags, metadata ]
 
   }
 ```
