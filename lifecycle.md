@@ -2,7 +2,7 @@
 
 # AI Notebook Lifecycle
 - https://bitbucket.org/ntuclink/terraform-google-ai-notebooks/pull-requests/2/diff
-
+```
 lifecycle {
     ignore_changes = [
       data_disk_type,
@@ -13,7 +13,7 @@ lifecycle {
       tags
     ]
   }
-
+```
 
 # GCE lifecycle
 lifecycle {
