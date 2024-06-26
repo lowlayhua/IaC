@@ -16,15 +16,16 @@ lifecycle {
 ```
 
 # GCE lifecycle
+```
 lifecycle {
     ignore_changes = [attached_disk, tags]
 
   }
-
+```
 
 
 # SQL
-
+```
 resource "google_sql_database_instance" "main" {
   name = "primary-instance"
   settings {
@@ -35,3 +36,4 @@ resource "google_sql_database_instance" "main" {
     prevent_destroy = true
   }
 }
+```
