@@ -19,8 +19,9 @@ lifecycle {
 ```
 lifecycle {
     ignore_changes = [attached_disk, tags, metadata ]
-
+     https://gcloud-compute.com/images.html
   }
+deletion_protection = true
 ```
 
 
