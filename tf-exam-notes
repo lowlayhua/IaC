@@ -6,3 +6,14 @@ In which phase of the Terraform workflow do you write configuration files based 
 # wrong
 In which phase of the Terraform workflow can you run pre-deployment checks against the policy library?
 - why plan wrong
+
+
+- You have decided to use Sentinel to enforce standardization and security controls. At what step are the Sentinel policies enforced during a run?
+- after the plan, run tasks, cost estimation phases but before the apply phase
+
+Sentinel policy evaluations occur after Terraform completes the plan and after both run tasks and cost estimation. This order lets you write Sentinel policies to restrict costs based on the data in the cost estimates.
+
+OPA policy evaluations are slightly different and occur after Terraform completes the plan and after any run tasks. Unlike Sentinel policies, 
+Terraform Cloud evaluates OPA policies immediately before cost estimation.
+
+The terraform console command provides an interactive command-line console for evaluating and experimenting with expressions. This is useful for testing interpolations before using them in configurations, and for interacting with any values currently saved in state.
