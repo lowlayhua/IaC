@@ -1,3 +1,20 @@
+# variables
+Terraform automatically loads all files in the current directory with the exact name terraform.tfvars or matching *.auto.tfvars. 
+You can also use the -var-file flag to specify other files by name.
+
+variable "resource_tags" {
+  description = "Tags to set for all resources"
+  type        = map(string)
+  default     = {
+    project     = "project-alpha",
+    environment = "dev"
+  }
+}
+
+# Validate variables
+
+
+
 # correct
 
 In which phase of the Terraform workflow do you write configuration files based on the scope defined by your organization?
