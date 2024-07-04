@@ -24,6 +24,15 @@ lifecycle {
 deletion_protection = true
 ```
 
+```
+lifecycle {
+    prevent_destroy = true  # Prevent accidental deletion
+    ignore_changes = [
+      "disks",               # Ignore changes in disks configuration
+      "labels",              # Ignore changes in labels
+    ]
+  }
+```
 
 # SQL
 ```
