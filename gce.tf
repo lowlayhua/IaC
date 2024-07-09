@@ -1,3 +1,4 @@
+# Refer https://gcloud-compute.com/images.html for OS images
 resource "google_service_account" "default" {
   account_id   = "my-custom-sa"
   display_name = "Custom SA for VM Instance"
