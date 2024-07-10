@@ -16,10 +16,11 @@ lifecycle {
 ```
 
 # GCE lifecycle
+ https://gcloud-compute.com/images.html
 ```
 lifecycle {
-    ignore_changes = [attached_disk, tags, metadata ]
-     https://gcloud-compute.com/images.html
+    ignore_changes = [attached_disk,  metadata ]
+    
   }
 deletion_protection = true
 ```
