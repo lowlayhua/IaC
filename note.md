@@ -1,3 +1,6 @@
+# Testing VM with multi disk
+- https://github.com/terraform-google-modules/terraform-google-vm/blob/master/examples/compute_instance/disk_snapshot/main.tf
+
 # Set this
 allow_stopping_for_update = true
 
