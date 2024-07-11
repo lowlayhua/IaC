@@ -3,3 +3,6 @@
 - https://github.com/RedHatOfficial/ansible-role-rhel8-cis
 
 - `ansible-galaxy role install RedHatOfficial.rhel8_cis`
+
+# CIS ubuntu 
+- https://github.com/pandom/packer-ubuntu/blob/main/playbook.yaml
