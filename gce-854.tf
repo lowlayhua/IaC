@@ -59,3 +59,20 @@ resource "google_compute_instance" "quickstart-vm" {
   tags = ["http-server", "https-server"]
   zone = "us-west1-c"
 }
+
+
+resource "google_compute_firewall" "default" {
+  name    = "http-server"
+  network = "default"
+
+  allow {
+    protocol = "icmp"
+  }
+
+  allow {
+    protocol = "tcp"
+    ports    = ["80", "443"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+}
