@@ -1,5 +1,5 @@
 https://vimhelp.org/options.txt.html#options.txt
-# .vimrc
+# cat .vimrc
 ```
 autocmd FileType yaml setlocal ts=2 
 set number
