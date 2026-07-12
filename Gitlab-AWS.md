@@ -3,7 +3,7 @@ https://docs.gitlab.com/ci/cloud_services/aws/#add-the-identity-provider
 
 # AWS
 
-## Add the identity provider
+## Step 1. Add the identity provider
 
 ```
 aws iam create-open-id-connect-provider \
