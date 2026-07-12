@@ -2,13 +2,13 @@
 https://docs.gitlab.com/ci/cloud_services/aws/#add-the-identity-provider
 
 ## Configure in AWS
-- Add the identity provider
-- ```aws iam create-open-id-connect-provider \
+## Add the identity provider
+```aws iam create-open-id-connect-provider \
     --url "https://gitlab.com" \
     --client-id-list "https://gitlab.com" ```
     
-- Configure the role and trust
-### Trust policy
+
+### Step 2. Configure the role and trust
 ```
 cat << 'EOF' > trust-policy.json
 {
@@ -32,9 +32,7 @@ cat << 'EOF' > trust-policy.json
   ]
 }
 EOF
-
 ```
-### Create Role
 - `aws iam create-role --role-name GitLab-Terraform-Execution-Role --assume-role-policy-document file://trust-policy.json --description Role assumed by GitLab CI/CD to provision resources via Terraform`
 
 ### Step 3: Attach Permissions for role-name GitLab-Terraform-Execution-Role
