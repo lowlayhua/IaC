@@ -39,8 +39,11 @@ EOF
 - `aws iam create-role --role-name GitLab-Terraform-Execution-Role --assume-role-policy-document file://trust-policy.json --description Role assumed by GitLab CI/CD to provision resources via Terraform`
 
 ### Step 3: Attach Permissions for role-name GitLab-Terraform-Execution-Role
+
+```
 - aws iam attach-role-policy \
     --role-name GitLab-Terraform-Execution-Role \
     --policy-arn arn:aws:iam::aws:policy/PowerUserAccess
-- 
+```
+
 - Retrieve a temporary credential
