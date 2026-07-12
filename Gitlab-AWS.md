@@ -1,9 +1,9 @@
 # Configure OpenID Connect in AWS to retrieve temporary credentials
 https://docs.gitlab.com/ci/cloud_services/aws/#add-the-identity-provider
 
-## Configure in AWS
-## Add the identity provider
+# AWS
 
+## Add the identity provider
 
 ```
 aws iam create-open-id-connect-provider \
