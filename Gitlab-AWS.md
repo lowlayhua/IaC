@@ -36,7 +36,10 @@ cat << 'EOF' > trust-policy.json
 }
 EOF
 ```
-- `aws iam create-role --role-name GitLab-Terraform-Execution-Role --assume-role-policy-document file://trust-policy.json --description Role assumed by GitLab CI/CD to provision resources via Terraform`
+```
+aws iam create-role --role-name GitLab-Terraform-Execution-Role \
+--assume-role-policy-document file://trust-policy.json --description 'Role assumed by GitLab CI/CD'
+```
 
 ### Step 3: Attach Permissions for role-name GitLab-Terraform-Execution-Role
 
