@@ -44,7 +44,7 @@ aws iam create-role --role-name GitLab-Terraform-Execution-Role \
 ### Step 3: Attach Permissions for role-name GitLab-Terraform-Execution-Role
 
 ```
-- aws iam attach-role-policy \
+aws iam attach-role-policy \
     --role-name GitLab-Terraform-Execution-Role \
     --policy-arn arn:aws:iam::aws:policy/PowerUserAccess
 ```
